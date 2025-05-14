@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SurVis Literature Browser</title>
+    <script src="scripts/survis.min.js"></script>
+    <link rel="stylesheet" href="css/survis.min.css">
+</head>
+<body>
+    <script>
+        LiteratureLoader.loadBibFile('wenxian.bib', function(literature) {
+            SurVis.initialize(literature);
+        });
+    </script>
+</body>
+</html>
